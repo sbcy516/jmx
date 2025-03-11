@@ -1,0 +1,1631 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>嘉沐馨 - 国潮文化洗护品牌战略方案</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
+        
+        :root {
+            --primary-color: #3A7D9F; /* 青瓷蓝 */
+            --primary-dark: #2A6A8A; /* 深青瓷蓝 */
+            --secondary-color: #4D8E76; /* 玉石绿 */
+            --accent-color: #C24E3A; /* 朱砂红 */
+            --light-accent: #D9A53B; /* 琥珀黄 */
+            --background: #F8F6F2; /* 宣纸色 */
+            --text-color: #333333;
+            --light-text: #666666;
+            --border-color: #E5E1D8;
+            
+            /* 字体家族 */
+            --title-font: 'Noto Serif SC', serif;
+            --body-font: 'Noto Sans SC', sans-serif;
+            
+            /* 字号 */
+            --h1-size: 2.8rem;
+            --h2-size: 2.4rem;
+            --h3-size: 1.8rem;
+            --h4-size: 1.4rem;
+            --h5-size: 1.2rem;
+            --body-size: 1rem;
+            --small-size: 0.9rem;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--body-font);
+            background-color: var(--background);
+            color: var(--text-color);
+            line-height: 1.6;
+            font-size: var(--body-size);
+        }
+
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        /* 封面 */
+        .cover {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cover::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.1;
+        }
+
+        .cover-content {
+            text-align: center;
+            z-index: 2;
+            padding: 2rem;
+        }
+
+        .logo {
+            width: 150px;
+            height: 150px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .logo-inner {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2.5rem;
+            font-weight: bold;
+            font-family: var(--title-font);
+        }
+
+        .title {
+            font-family: var(--title-font);
+            font-size: var(--h1-size);
+            margin-bottom: 1rem;
+            font-weight: 700;
+            letter-spacing: 8px;
+        }
+
+        .subtitle {
+            font-family: var(--title-font);
+            font-size: var(--h3-size);
+            margin-bottom: 2rem;
+            font-weight: 300;
+            letter-spacing: 4px;
+        }
+
+        .date {
+            font-family: var(--body-font);
+            font-size: var(--body-size);
+            opacity: 0.8;
+            margin-top: 2rem;
+            letter-spacing: 1px;
+        }
+
+        /* 章节样式 */
+        .section {
+            padding: 3rem 2.5rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .section:nth-child(even) {
+            background-color: white;
+        }
+
+        .section-title {
+            font-family: var(--title-font);
+            font-size: var(--h2-size);
+            color: var(--primary-color);
+            margin-bottom: 2.5rem;
+            text-align: center;
+            position: relative;
+            font-weight: 600;
+        }
+
+        .section-title::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 4px;
+            background: var(--accent-color);
+            margin: 1rem auto;
+        }
+
+        .chapter {
+            margin-bottom: 3.5rem;
+        }
+
+        .chapter-title {
+            font-family: var(--title-font);
+            font-size: var(--h3-size);
+            color: var(--secondary-color);
+            margin-bottom: 1.8rem;
+            border-left: 5px solid var(--secondary-color);
+            padding-left: 1.2rem;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+
+        .sub-chapter {
+            margin-bottom: 2.5rem;
+        }
+
+        .sub-chapter-title {
+            font-family: var(--title-font);
+            font-size: var(--h4-size);
+            color: var(--primary-color);
+            margin-bottom: 1.2rem;
+            font-weight: 500;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+            line-height: 1.8;
+        }
+
+        /* 列表样式 */
+        ul, ol {
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            line-height: 1.6;
+        }
+
+        /* 表格样式 */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            background: white;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1.2rem 1rem;
+            text-align: left;
+            font-family: var(--title-font);
+            font-weight: 500;
+        }
+
+        td {
+            padding: 1.2rem 1rem;
+            border-bottom: 1px solid var(--border-color);
+            line-height: 1.6;
+        }
+
+        tr:nth-child(even) {
+            background-color: rgba(58, 125, 159, 0.05);
+        }
+
+        /* 图表 */
+        .chart-container {
+            margin: 2.5rem 0;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .chart {
+            width: 100%;
+            height: 400px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .bar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50px;
+        }
+
+        .bar-fill {
+            width: 100%;
+            background: linear-gradient(to top, var(--primary-color), var(--secondary-color));
+            border-radius: 8px 8px 0 0;
+            transition: height 1s ease;
+        }
+
+        .bar-label {
+            margin-top: 12px;
+            font-size: var(--small-size);
+            color: var(--light-text);
+            text-align: center;
+        }
+
+        /* 产品展示 */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 2.5rem;
+            margin: 2.5rem 0;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+            transition: all 0.3s ease;
+            border: 1px solid var(--border-color);
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.18);
+        }
+
+        .product-image {
+            height: 200px;
+            width: 100%;
+            background: var(--primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3.5rem;
+            font-weight: 300;
+            position: relative;
+            overflow: hidden;
+            font-family: var(--title-font);
+        }
+
+        .product-image::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.15'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        .product-info {
+            padding: 1.8rem;
+        }
+
+        .product-name {
+            font-family: var(--title-font);
+            font-size: var(--h4-size);
+            color: var(--primary-color);
+            margin-bottom: 0.8rem;
+            font-weight: 500;
+        }
+
+        .product-desc {
+            font-size: var(--small-size);
+            color: var(--light-text);
+            margin-bottom: 1.2rem;
+            line-height: 1.6;
+        }
+
+        .product-price {
+            font-size: var(--h5-size);
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        /* 团队展示 */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2.5rem;
+            margin: 2.5rem 0;
+        }
+
+        .team-member {
+            text-align: center;
+            background: white;
+            padding: 2rem 1rem;
+            border-radius: 12px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+        }
+
+        .member-avatar {
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            border-radius: 50%;
+            margin: 0 auto 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2.5rem;
+            font-family: var(--title-font);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        }
+
+        .member-name {
+            font-family: var(--title-font);
+            font-size: var(--h5-size);
+            color: var(--primary-color);
+            margin-bottom: 0.8rem;
+            font-weight: 500;
+        }
+
+        .member-title {
+            font-size: var(--small-size);
+            color: var(--light-text);
+            line-height: 1.5;
+        }
+
+        /* 时间轴 */
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 2.5rem auto;
+            padding: 1rem 0;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: var(--primary-color);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+            border-radius: 3px;
+        }
+
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            background-color: white;
+            border: 5px solid var(--accent-color);
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+        }
+
+        .timeline-left {
+            left: 0;
+        }
+
+        .timeline-right {
+            left: 50%;
+        }
+
+        .timeline-left::after {
+            right: -12px;
+        }
+
+        .timeline-right::after {
+            left: -12px;
+        }
+
+        .timeline-content {
+            padding: 20px;
+            background-color: white;
+            position: relative;
+            border-radius: 8px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+        }
+
+        .timeline-content h3 {
+            font-family: var(--title-font);
+            color: var(--primary-color);
+            margin-bottom: 0.8rem;
+            font-weight: 500;
+            font-size: var(--h5-size);
+        }
+
+        .timeline-content p {
+            margin-bottom: 0.5rem;
+            font-size: var(--small-size);
+        }
+
+        /* 饼图 */
+        .pie-chart {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            background-image: conic-gradient(
+                var(--primary-color) 0% 25%, 
+                var(--secondary-color) 25% 50%, 
+                var(--accent-color) 50% 75%, 
+                var(--light-accent) 75% 100%
+            );
+            margin: 2.5rem auto;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+
+        .pie-legend {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.2rem;
+            margin-top: 1.5rem;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin-right: 1rem;
+            background: rgba(255,255,255,0.8);
+            padding: 0.6rem 1rem;
+            border-radius: 50px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            margin-right: 0.8rem;
+            border-radius: 4px;
+        }
+
+        .legend-label {
+            font-size: var(--small-size);
+            color: var(--light-text);
+        }
+
+        /* 步骤 */
+        .steps {
+            display: flex;
+            justify-content: space-between;
+            margin: 3.5rem 0;
+            position: relative;
+        }
+
+        .steps::before {
+            content: "";
+            position: absolute;
+            height: 4px;
+            background-color: var(--border-color);
+            top: 35px;
+            left: 50px;
+            right: 50px;
+            z-index: 0;
+            border-radius: 2px;
+        }
+
+        .step {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .step-number {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            margin-bottom: 1.2rem;
+            font-family: var(--title-font);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+            font-weight: 600;
+        }
+
+        .step-title {
+            font-size: var(--h5-size);
+            color: var(--primary-color);
+            text-align: center;
+            max-width: 150px;
+            font-family: var(--title-font);
+            font-weight: 500;
+            line-height: 1.5;
+        }
+
+        /* 信息卡片样式 */
+        .info-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+            margin-bottom: 2rem;
+            border-top: 5px solid var(--primary-color);
+        }
+
+        .info-card-title {
+            font-family: var(--title-font);
+            color: var(--primary-color);
+            font-size: var(--h4-size);
+            margin-bottom: 1.2rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+        }
+
+        .info-card-title i {
+            margin-right: 0.8rem;
+            color: var(--primary-color);
+        }
+
+        /* 特色框 */
+        .highlight-box {
+            background: var(--background);
+            padding: 2.5rem;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            margin: 2.5rem 0;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.05);
+        }
+
+        .highlight-title {
+            color: var(--primary-color);
+            text-align: center; 
+            margin-bottom: 1.5rem; 
+            font-family: var(--title-font);
+            font-size: var(--h4-size);
+            font-weight: 500;
+        }
+
+        .highlight-subtitle {
+            text-align: center; 
+            font-style: italic; 
+            margin-bottom: 2rem;
+            color: var(--light-text);
+            font-family: var(--title-font);
+        }
+
+        /* 两列布局 */
+        .two-column {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2.5rem;
+            margin: 2.5rem 0;
+        }
+
+        .column {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        /* 页脚 */
+        .footer {
+            text-align: center; 
+            padding: 5rem 0; 
+            background: var(--background);
+        }
+
+        .footer-title {
+            color: var(--primary-color); 
+            margin-bottom: 1.2rem;
+            font-family: var(--title-font);
+            font-size: var(--h3-size);
+            font-weight: 500;
+        }
+
+        .footer-text {
+            font-size: var(--body-size);
+            line-height: 1.8;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* 按钮样式 */
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            margin-top: 1.5rem;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .btn:hover {
+            background: var(--primary-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        }
+
+        /* 图标样式 */
+        .icon {
+            width: 60px;
+            height: 60px;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 1.8rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        /* 进度条样式 */
+        .progress-bar {
+            width: 100%;
+            height: 10px;
+            background: var(--border-color);
+            border-radius: 5px;
+            margin: 1.5rem 0;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            border-radius: 5px;
+        }
+
+        /* 打印样式 */
+        @media print {
+            @page {
+                size: A4;
+                margin: 1.5cm;
+            }
+            
+            body {
+                background-color: white;
+                font-size: 11pt;
+            }
+            
+            .container {
+                width: 100%;
+                max-width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            
+            /* 封面页 */
+            .cover {
+                height: 280mm;
+                page-break-after: always;
+            }
+            
+            /* 各大章节分页 */
+            .section {
+                page-break-before: always;
+                padding: 0 0 2rem 0;
+                border-bottom: none;
+                background-color: white !important;
+            }
+            
+            /* 去除背景色和阴影 */
+            .chart-container, .product-card, .team-member, 
+            .timeline-content, .info-card, .highlight-box {
+                box-shadow: none;
+                border: 1px solid #ddd;
+            }
+            
+            /* 表格样式调整 */
+            table {
+                box-shadow: none;
+                border: 1px solid #ddd;
+            }
+            
+            th {
+                background-color: #eee !important;
+                color: black;
+            }
+            
+            /* 确保特定元素不被分页 */
+            .chapter, .sub-chapter, table, .chart-container, 
+            .product-grid, .team-grid {
+                page-break-inside: avoid;
+            }
+            
+            /* 隐藏不必要的元素 */
+            .steps::before, .timeline::after {
+                display: none;
+            }
+            
+            /* 调整A4页面内的布局平衡 */
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .team-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .two-column {
+                display: block;
+            }
+            
+            .pie-chart {
+                transform: scale(0.8);
+                margin: 1rem auto;
+            }
+            
+            .chart {
+                height: 300px;
+            }
+            
+            /* 页眉页脚 */
+            @page {
+                @top-center {
+                    content: "嘉沐馨 - 国潮文化洗护品牌战略方案";
+                    font-family: var(--body-font);
+                    font-size: 9pt;
+                    color: #666;
+                }
+                @bottom-right {
+                    content: "第 " counter(page) " 页";
+                    font-family: var(--body-font);
+                    font-size: 9pt;
+                    color: #666;
+                }
+            }
+            
+            /* 确保内容不会被截断 */
+            p, li, td, .product-desc {
+                orphans: 3;
+                widows: 3;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 封面 -->
+    <div class="cover">
+        <div class="cover-content">
+            <div class="logo">
+                <div class="logo-inner">嘉馨</div>
+            </div>
+            <h1 class="title">嘉沐馨</h1>
+            <h2 class="subtitle">国潮文化洗护品牌战略方案</h2>
+            <p class="date">嘉沐馨运营团队 2025年3月</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- 第一部分：市场分析与机会 -->
+        <div class="section">
+            <h2 class="section-title">市场分析与机会</h2>
+            
+            <div class="chapter">
+                <h3 class="chapter-title">中国洗护市场现状</h3>
+                <p>中国洗涤用品市场已发展成熟，2024年市场规模约1200亿元，年增长率维持在6.8%。目前市场格局中，外资品牌如汰渍、碧浪等占据45%市场份额，本土大型企业如蓝月亮、立白等占据40%市场份额，而中小品牌与新锐品牌仅占15%市场空间。</p>
+                
+                <div class="chart-container">
+                    <h4 class="highlight-title">中国洗涤用品市场份额分布</h4>
+                    <div class="pie-chart"></div>
+                    <div class="pie-legend">
+                        <div class="legend-item">
+                            <div class="legend-color" style="background-color: var(--primary-color);"></div>
+                            <div class="legend-label">外资品牌 45%</div>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background-color: var(--secondary-color);"></div>
+                            <div class="legend-label">本土大型企业 40%</div>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background-color: var(--accent-color);"></div>
+                            <div class="legend-label">中小品牌 10%</div>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background-color: var(--light-accent);"></div>
+                            <div class="legend-label">新锐品牌 5%</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <p>消费趋势呈现四大特点：消费升级、健康环保、智能化以及个性化需求增长。这为具有创新力的中小品牌提供了突破口。随着消费者对产品品质和文化内涵的要求提高，国潮风设计的产品正成为新的增长点。</p>
+            </div>
+            
+            <div class="chapter">
+                <h3 class="chapter-title">细分市场机会点</h3>
+                <p>通过深入分析，我们发现以下细分市场存在显著增长潜力：</p>
+                
+                <div class="two-column">
+                    <div class="column">
+                        <div class="info-card">
+                            <h4 class="info-card-title"><i class="fas fa-chart-line"></i>功能细分</h4>
+                            <p>专业去渍、亮白增艳、纤维修复等细分需求增长率达<strong>18%</strong>，远高于市场平均水平。</p>
+                        </div>
+                        
+                        <div class="info-card">
+                            <h4 class="info-card-title"><i class="fas fa-users"></i>人群细分</h4>
+                            <p>婴幼儿/敏感肌专用产品增长率达<strong>22%</strong>，消费者愿意为特殊需求支付更高溢价。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="column">
+                        <div class="info-card">
+                            <h4 class="info-card-title"><i class="fas fa-clock"></i>场景细分</h4>
+                            <p>速洗、夜间洗涤等特定场景需求增长迅速，增长率达<strong>15%</strong>，成为新兴增长点。</p>
+                        </div>
+                        
+                        <div class="info-card">
+                            <h4 class="info-card-title"><i class="fas fa-flag"></i>文化价值</h4>
+                            <p>国潮产品在25-35岁女性消费者中接受度提升<strong>35%</strong>，成为品牌差异化的关键因素。</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="chart-container">
+                    <h4 class="highlight-title">细分市场年增长率对比</h4>
+                    <div class="chart">
+                        <div class="bar">
+                            <div class="bar-fill" style="height: 120px;"></div>
+                            <div class="bar-label">整体市场<br>6.8%</div>
+                        </div>
+                        <div class="bar">
+                            <div class="bar-fill" style="height: 240px;"></div>
+                            <div class="bar-label">功能细分<br>18%</div>
+                        </div>
+                        <div class="bar">
+                            <div class="bar-fill" style="height: 280px;"></div>
+                            <div class="bar-label">人群细分<br>22%</div>
+                        </div>
+                        <div class="bar">
+                            <div class="bar-fill" style="height: 190px;"></div>
+                            <div class="bar-label">场景细分<br>15%</div>
+                        </div>
+                        <div class="bar">
+                            <div class="bar-fill" style="height: 350px;"></div>
+                            <div class="bar-label">国潮产品<br>35%</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <p>数据表明，国潮文化与功能性结合的产品具有巨大市场潜力，特别是在年轻消费群体中。这种结合满足了消费者对功能与情感价值的双重需求。</p>
+            </div>
+            
+            <div class="chapter">
+                <h3 class="chapter-title">消费者洞察</h3>
+                <div class="two-column">
+                    <div class="column">
+                        <div class="info-card">
+                            <h4 class="info-card-title"><i class="fas fa-exclamation-triangle"></i>新生代消费者痛点</h4>
+                            <ul>
+                                <li><strong>同质化严重</strong>：难以辨识品牌差异，缺乏鲜明特色</li>
+                                <li><strong>功效与宣传不符</strong>：信任度低，消费者对宣传持怀疑态度</li>
+                                <li><strong>使用体验缺乏惊喜感</strong>：洗护产品使用过程缺乏仪式感和情感连接</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="column">
+                        <div class="info-card">
+                            <h4 class="info-card-title"><i class="fas fa-lightbulb"></i>国潮消费趋势</h4>
+                            <ul>
+                                <li><strong>85%</strong>的90后、00后认同并支持有文化底蕴的本土品牌</li>
+                                <li><strong>62%</strong>消费者愿为文化符号买单，但要求实用性兼具</li>
+                                <li>社交媒体分享成为购买决策重要影响因素，<strong>73%</strong>消费者会分享自己喜爱的文化产品</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chapter">
+                <h3 class="chapter-title">竞争差距与机会</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>品牌类型</th>
+                            <th>代表品牌</th>
+                            <th>优势</th>
+                            <th>劣势</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>外资巨头</td>
+                            <td>汰渍/碧浪</td>
+                            <td>技术研发、全球资源、营销规模</td>
+                            <td>本土化不足、价格高、缺乏文化情感连接</td>
+                        </tr>
+                        <tr>
+                            <td>本土大牌</td>
+                            <td>蓝月亮/立白</td>
+                            <td>渠道覆盖、价格优势、本土化运营</td>
+                            <td>创新度低、形象老旧、目标客群老化</td>
+                        </tr>
+                        <tr>
+                            <td>新锐品牌</td>
+                            <td>超洁妙/纯净时代</td>
+                            <td>营销新颖、定位精准、反应速度快</td>
+                            <td>规模小、认知度低、缺乏核心技术</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="highlight-box">
+                    <h4 class="highlight-title">嘉沐馨的市场机会</h4>
+                    <p>我们的核心机会在于：<strong>结合高效配方与文化创意，打造兼具功能与情感价值的差异化产品</strong>。通过更高表活度原料提供卓越清洁效果，同时融入中国传统文化元素，创造独特的品牌体验。</p>
+                    <p>现有市场中缺乏真正将功能性与中国传统文化深度结合的产品，这正是嘉沐馨品牌的突破点。国潮风设计不仅增强产品辨识度，还能赋予产品文化内涵，提升品牌溢价能力。</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 第二部分：品牌概念与定位 -->
+        <div class="section">
+            <h2 class="section-title">品牌概念与定位</h2>
+            
+            <div class="chapter">
+                <h3 class="chapter-title">品牌核心理念</h3>
+                <div style="display: flex; align-items: center; justify-content: center; margin: 3rem 0;">
+                    <div style="text-align: center; max-width: 700px;">
+                        <div class="logo" style="margin-bottom: 1.5rem;">
+                            <div class="logo-inner">嘉馨</div>
+                        </div>
+                        <h3 style="color: var(--primary-color); margin-bottom: 1rem; font-family: var(--title-font); font-size: var(--h3-size);">嘉沐馨</h3>
+                        
+                        <div class="two-column" style="text-align: left; margin-top: 2rem;">
+                            <div class="column">
+                                <div class="info-card">
+                                    <h4 class="info-card-title"><i class="fas fa-feather-alt"></i>品牌释义</h4>
+                                    <p><strong>"嘉"</strong>代表优质，象征产品的高品质与卓越功效。</p>
+                                    <p><strong>"沐"</strong>象征洗护体验，代表沐浴在自然与文化之中。</p>
+                                    <p><strong>"馨"</strong>体现芬芳馥郁的体验和传统文化的芳香。</p>
+                                </div>
+                            </div>
+                            
+                            <div class="column">
+                                <div class="info-card">
+                                    <h4 class="info-card-title"><i class="fas fa-star"></i>品牌使命与愿景</h4>
+                                    <p><strong>品牌使命</strong>：传承千年洁净智慧，创造当代生活美学</p>
+                                    <p><strong>品牌愿景</strong>：成为中国文化与现代科技融合的生活方式引领者</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chapter">
+                <h3 class="chapter-title">品牌定位与价值主张</h3>
+                <div class="sub-chapter">
+                    <h4 class="sub-chapter-title">目标人群画像</h4>
+                    <div class="two-column">
+                        <div class="column">
+                            <div class="info-card">
+                                <h4 class="info-card-title"><i class="fas fa-user-circle"></i>核心人群特征</h4>
+                                <ul>
+                                    <li><strong>年龄</strong>：25-40岁</li>
+                                    <li><strong>收入</strong>：中高收入（月收入12000+）</li>
+                                    <li><strong>职业</strong>：白领、创意行业、教育工作者等</li>
+                                    <li><strong>生活方式</strong>：注重品质生活，有较强消费能力</li>
+                                    <li><strong>文化倾向</strong>：认同中国传统文化，有文化自信</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="column">
+                            <div class="info-card">
+                                <h4 class="info-card-title"><i class="fas fa-heart"></i>情感与行为特点</h4>
+                                <ul>
+                                    <li><strong>购买动机</strong>：功能需求与情感满足并重</li>
+                                    <li><strong>决策因素</strong>：品牌价值观、产品细节、使用体验</li>
+                                    <li><strong>消费场景</strong>：日常生活、礼品赠送、社交分享</li>
+                                    <li><strong>品牌关系</strong>：寻求与品牌建立情感连接</li>
+                                    <li><strong>传播习惯</strong>：社交媒体活跃，乐于分享生活美学</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sub-chapter">
+                    <h4 class="sub-chapter-title">三维价值主张</h4>
+                    <div class="highlight-box">
+                        <div class="two-column">
+                            <div class="column">
+                                <div style="text-align: center; margin-bottom: 1.5rem;">
+                                    <div class="icon" style="background: var(--primary-color);">
+                                        <i class="fas fa-flask"></i>
+                                    </div>
+                                    <h5 style="font-family: var(--title-font); color: var(--primary-color); margin-bottom: 0.5rem; font-size: var(--h5-size);">功能维度</h5>
+                                    <p>更高表活度原料（28-32%），提供卓越清洁效果，相同用量下清洁力提升40%。专业配方针对不同面料和场景优化，解决真实洗护难题。</p>
+                                </div>
+                            </div>
+                            
+                            <div class="column">
+                                <div style="text-align: center; margin-bottom: 1.5rem;">
+                                    <div class="icon" style="background: var(--secondary-color);">
+                                        <i class="fas fa-theater-masks"></i>
+                                    </div>
+                                    <h5 style="font-family: var(--title-font); color: var(--secondary-color); margin-bottom: 0.5rem; font-size: var(--h5-size);">情感维度</h5>
+                                    <p>通过文化符号连接传统与现代生活，唤起对中国文化精髓的认同与自豪。包装与产品设计融入诗词、朝代、神话等元素，赋予产品文化灵魂。</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div style="text-align: center; margin-top: 1rem;">
+                            <div class="icon" style="background: var(--accent-color);">
+                                <i class="fas fa-share-alt"></i>
+                            </div>
+                            <h5 style="font-family: var(--title-font); color: var(--accent-color); margin-bottom: 0.5rem; font-size: var(--h5-size);">社交维度</h5>
+                            <p>提供富有话题性与分享价值的产品体验，打造可讲述、可传播的品牌故事。每款产品背后都有丰富的文化故事，成为消费者社交分享的内容，扩大品牌影响力。</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sub-chapter">
+                    <h4 class="sub-chapter-title">品牌个性</h4>
+                    <div class="info-card">
+                        <p>嘉沐馨品牌个性：<strong>温润典雅、睿智从容、创新不失传统</strong>。品牌形象既保持传统文化的庄重与优雅，又融入现代设计元素，体现创新精神。就像一位博学多才、温文尔雅的文化使者，以现代视角诠释传统智慧。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chapter">
+                <h3 class="chapter-title">品牌视觉识别系统</h3>
+                <div class="two-column">
+                    <div class="column">
+                        <div class="info-card">
+                            <h4 class="info-card-title"><i class="fas fa-signature"></i>品牌标志</h4>
+                            <div style="text-align: center; margin: 1.5rem 0;">
+                                <div class="logo" style="margin: 0 auto 1.5rem;">
+                                    <div class="logo-inner">嘉馨</div>
+                                </div>
+                                <p>标志融合水滴与中国结元素，象征清洁与文化传承的完美结合。简约流畅的线条，彰显现代感的同时不失东方韵味。</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="column">
+                        <div class="info-card">
+                            <h4 class="info-card-title"><i class="fas fa-palette"></i>品牌色系</h4>
+                            <div style="margin: 1.5rem 0;">
+                                <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem; justify-content: center;">
+                                    <div style="width: 80px; height: 80px; background-color: var(--primary-color); border-radius: 8px; box-shadow: 0 3px 8px rgba(0,0,0,0.1);"></div>
+                                    <div style="width: 80px; height: 80px; background-color: var(--secondary-color); border-radius: 8px; box-shadow: 0 3px 8px rgba(0,0,0,0.1);"></div>
+                                    <div style="width: 80px; height: 80px; background-color: var(--accent-color); border-radius: 8px; box-shadow: 0 3px 8px rgba(0,0,0,0.1);"></div>
+                                    <div style="width: 80px; height: 80px; background-color: var(--light-accent); border-radius: 8px; box-shadow: 0 3px 8px rgba(0,0,0,0.1);"></div>
+                                </div>
+                                <p><strong>主色</strong>：青瓷蓝（C:75 M:15 Y:10 K:0）- 象征纯净与典雅</p>
+                                <p><strong>辅助色</strong>：玉石绿、朱砂红、琥珀黄 - 取自中国传统色彩</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sub-chapter">
+                    <h4 class="sub-chapter-title">包装设计原则</h4>
+                    <div class="highlight-box">
+                        <h4 class="highlight-title">包装设计六大原则</h4>
+                        <div class="two-column">
+                            <div class="column">
+                                <ul>
+                                    <li><strong>简约现代构图</strong>：干净利落的布局，留白得当</li>
+                                    <li><strong>传统元素点缀</strong>：融入对应朝代/诗词/神话元素</li>
+                                    <li><strong>材质质感提升</strong>：局部烫金、暗纹雕刻等工艺</li>
+                                </ul>
+                            </div>
+                            <div class="column">
+                                <ul>
+                                    <li><strong>功能与美学并重</strong>：精心设计的使用细节</li>
+                                    <li><strong>故事性延展</strong>：包装可扫描获取更多文化内容</li>
+                                    <li><strong>系列化识别</strong>：保持统一设计语言，增强辨识度</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chapter">
+                <h3 class="chapter-title">品牌故事核心</h3>
+                <div class="highlight-box">
+                    <h4 class="highlight-title">穿越千年的洁净智慧</h4>
+                    <p class="highlight-subtitle">中华五千年文明，孕育了独特的清洁文化与智慧</p>
+                    
+                    <p>从古代皂荚到现代表活剂，从古法精工到现代科技创新，嘉沐馨致力于将传统清洁智慧与现代科技完美融合，创造既有功效又有文化内涵的洗护产品。</p>
+                    
+                    <p>在中国传统文化中，"洁"不仅是物理上的清洁，更是一种精神追求和生活态度。《礼记》有云："齐，必有明；明，必洁；洁，必身；身，必悫。"古人将清洁视为一种仪式，体现着对生活的尊重与热爱。</p>
+                    
+                    <p>嘉沐馨不仅关注洁净效果，更注重洁净过程中的美学体验，将中国传统美学理念融入现代生活，让每一次洗护都成为一次文化探索与美学享受。每款产品背后，都藏着一段中华智慧与匠心故事，让使用者在日常洗护中，感受五千年文明的温度。</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 第三部分：产品系列规划 -->
+        <div class="section">
+            <h2 class="section-title">产品系列规划</h2>
+            
+            <div class="chapter">
+                <h3 class="chapter-title">产品线结构</h3>
+                <p>嘉沐馨品牌下规划三大系列共九款产品，形成完整的产品矩阵，满足不同消费者的多样化需求。每个系列都有明确的定位和差异化特点，共同构成品牌的核心竞争力。</p>
+                
+                <div class="info-card" style="margin: 2rem 0; font-family: monospace; line-height: 1.8; font-size: 1rem;">
+                    <h4 class="info-card-title"><i class="fas fa-project-diagram"></i>产品矩阵结构</h4>
+                    嘉沐馨<br>
+                    ├── 朝代系列（高端定位）<br>
+                    │   ├── 唐韵：丝绸/羊毛专用<br>
+                    │   ├── 宋雅：日常标准版<br>
+                    │   ├── 明亮：深层去渍版<br>
+                    │   └── 清新：婴幼儿/敏感肌<br>
+                    ├── 诗词系列（场景定位）<br>
+                    │   ├── 春水碧于天：换季衣物<br>
+                    │   ├── 明月松间照：夜间洗涤<br>
+                    │   └── 疏影横斜水清浅：速洗型<br>
+                    └── 神话系列（功能定位）<br>
+                        ├── 女娲补天：修复型<br>
+                        └── 二郎神：三效合一<br>
+                </div>
+                
+                <p>这一产品结构设计既考虑了不同价格带的覆盖，又针对不同使用场景和功能需求提供了专业解决方案。通过三大系列的组合，形成了品牌完整的产品生态，为消费者提供全方位的洗护选择。</p>
+            </div>
+            
+            <div class="chapter">
+                <h3 class="chapter-title">核心产品详解：朝代系列</h3>
+                <p>朝代系列以中国四大经典朝代为灵感，将不同朝代的文化特点与产品功能完美融合，是品牌的高端定位系列。每款产品都对应一个朝代的特色，包装设计也融入相应的文化元素。</p>
+                
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-image" style="background: linear-gradient(135deg, #8E3A59, #C1435F);">唐</div>
+                        <div class="product-info">
+                            <h4 class="product-name">唐韵</h4>
+                            <p class="product-desc">丝绸/羊毛高端衣物专用，添加蚕丝蛋白和茶籽提取物，呵护珍贵面料。包装设计融入唐代彩绘元素，彰显盛唐气韵。</p>
+                            <p class="product-price">¥69.9/瓶</p>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image" style="background: linear-gradient(135deg, #567B96, #719AAF);">宋</div>
+                        <div class="product-info">
+                            <h4 class="product-name">宋雅</h4>
+                            <p class="product-desc">日常衣物标准版，温和高效，添加天然皂角精华，全面清洁不伤衣物。包装借鉴宋代青瓷简约美学，展现文人雅致。</p>
+                            <p class="product-price">¥49.9/瓶</p>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image" style="background: linear-gradient(135deg, #2B578F, #4172AD);">明</div>
+                        <div class="product-info">
+                            <h4 class="product-name">明亮</h4>
+                            <p class="product-desc">深层去渍专业版，添加强效酶制剂，有效去除顽固污渍。包装融入明代青花瓷元素，象征清晰明亮的洁净效果。</p>
+                            <p class="product-price">¥59.9/瓶</p>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image" style="background: linear-gradient(135deg, #B79273, #D1B59A);">清</div>
+                        <div class="product-info">
+                            <h4 class="product-name">清新</h4>
+                            <p class="product-desc">婴幼儿/敏感肌专用，无香配方，添加天然抑菌成分，温和不刺激。包装采用清代宫廷轻淡色彩，传达纯净呵护理念。</p>
+                            <p class="product-price">¥79.9/瓶</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chapter">
+                <h3 class="chapter-title">核心产品详解：诗词系列</h3>
+                <p>诗词系列以经典诗词为灵感，将诗中意境与特定洗涤场景相结合，满足消费者在不同场景下的需求。每款产品与一首经典诗词相呼应，在功能设计上也与诗意相符。</p>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>产品名</th>
+                            <th>对应诗句</th>
+                            <th>应用场景</th>
+                            <th>差异化设计</th>
+                            <th>零售价</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>春水碧于天</td>
+                            <td>李白《春夜洛城闻笛》</td>
+                            <td>换季衣物护理</td>
+                            <td>添加植物精华，防止静电，保持衣物如新</td>
+                            <td>¥59.9/瓶</td>
+                        </tr>
+                        <tr>
+                            <td>明月松间照</td>
+                            <td>王维《山居秋暝》</td>
+                            <td>夜间洗涤</td>
+                            <td>添加薰衣草精油助眠，瓶身采用夜光设计</td>
+                            <td>¥69.9/瓶</td>
+                        </tr>
+                        <tr>
+                            <td>疏影横斜水清浅</td>
+                            <td>林逋《山园小梅》</td>
+                            <td>快速洗涤</td>
+                            <td>5分钟速洁科技，带有时间提示功能</td>
+                            <td>¥54.9/瓶</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="highlight-box">
+                    <h4 class="highlight-title">产品亮点：明月松间照</h4>
+                    <p class="highlight-subtitle">明月松间照，清泉石上流 —— 王维《山居秋暝》</p>
+                    
+                    <div class="two-column">
+                        <div class="column">
+                            <p>这款产品专为夜间洗涤场景设计，针对现代人晚间洗衣需求开发。添加薰衣草精油助眠因子，在洗涤过程中释放舒缓香气，有助于改善睡眠质量。</p>
+                            <p>包装采用特殊夜光材料，在暗处可发出柔和月光般的光芒，方便夜间使用，也呼应诗中"明月"意境。瓶身设计灵感来自古代石上流水，开盖倾倒时如清泉流淌，既赋予诗意，又兼具实用性。</p>
+                        </div>
+                        <div class="column">
+                            <p>产品特色功能：</p>
+                            <ul>
+                                <li>低泡沫配方，易冲洗，夜间洗衣节约时间</li>
+                                <li>添加天然薰衣草精油，有助于舒缓情绪</li>
+                                <li>夜光瓶身设计，黑暗中易于识别和使用</li>
+                                <li>温和不刺激，适合在安静的夜晚使用</li>
+                                <li>包装QR码链接音频，可聆听《山居秋暝》诗歌朗诵，增强使用体验</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chapter">
+                <h3 class="chapter-title">核心产品详解：神话系列</h3>
+                <p>神话系列以中国经典神话故事为灵感，针对特殊洗护需求开发，将故事元素与产品功能高度契合。每款产品都融入神话人物的特点，解决特定洗护难题。</p>
+                
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-image" style="background: linear-gradient(135deg, #D87456, #E9967A);">女娲</div>
+                        <div class="product-info">
+                            <h4 class="product-name">女娲补天</h4>
+                            <p class="product-desc">修复型洗护产品，针对老旧、受损衣物，添加纤维重组因子，能有效修复织物结构，延长衣物寿命，包装采用渐变修复视觉效果，寓意衣物重获新生。</p>
+                            <p class="product-price">¥79.9/瓶</p>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image" style="background: linear-gradient(135deg, #4E6599, #6A80B3);">二郎</div>
+                        <div class="product-info">
+                            <h4 class="product-name">二郎神</h4>
+                            <p class="product-desc">三效合一旗舰产品，集洗涤、柔顺、护色功能于一体，如同三头六臂般全能高效。采用三区分装设计，使用时三种功能成分自动混合，一次完成多重洗护任务。</p>
+                            <p class="product-price">¥89.9/瓶</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="info-card" style="margin-top: 2rem;">
+                    <h4 class="info-card-title"><i class="fas fa-magic"></i>神话系列产品理念</h4>
+                    <p>神话系列产品不仅是洗护用品，更是解决特定问题的"神器"。每款产品都有其独特的"神通"，以现代科技实现传说中的神奇功效。通过赋予产品神话元素，让消费者在使用过程中体验到超越期待的效果，同时加深对中国传统神话故事的了解与认同。</p>
+                </div>
+            </div>
+            
+            <div class="chapter">
+                <h3 class="chapter-title">包装创新与体验设计</h3>
+                <div class="two-column">
+                    <div class="column">
+                        <div class="info-card">
+                            <h4 class="info-card-title"><i class="fas fa-cogs"></i>功能创新</h4>
+                            <ul>
+                                <li><strong>智能用量刻度</strong>：根据水质硬度+衣物重量智能推荐用量，避免过量使用</li>
+                                <li><strong>防滴漏设计</strong>：特殊瓶口设计避免产品残留，保持使用环境整洁</li>
+                                <li><strong>易握把手</strong>：人体工学设计，适合湿手环境使用，提升操作便利性</li>
+                                <li><strong>精准控量系统</strong>：一按即停，节约产品，提高使用效率</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="column">
+                        <div class="info-card">
+                            <h4 class="info-card-title"><i class="fas fa-coffee"></i>文化体验</h4>
+                            <ul>
+                                <li><strong>微缩文化图谱</strong>：包装内饰印有对应朝代/诗词/神话微缩图，细节处见用心</li>
+                                <li><strong>互动式内容</strong>：瓶身隐藏式二维码，扫描可获取文化故事、音频朗诵等扩展内容</li>
+                                <li><strong>工艺升级</strong>：局部烫金、暗纹雕刻等特殊工艺，提升包装质感，彰显品牌调性</li>
+                                <li><strong>收藏价值</strong>：限量版包装采用艺术收藏级设计，增加产品收藏价值</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chapter">
+                <h3 class="chapter-title">产品环保特性</h3>
+                <div class="two-column">
+                    <div class="column">
+                        <div class="info-card">
+                            <h4 class="info-card-title"><i class="fas fa-leaf"></i>环保包装</h4>
+                            <ul>
+                                <li><strong>主材</strong>：生物基PET材质，30%甘蔗提取物，减少石油依赖</li>
+                                <li><strong>可降解标签</strong>：水溶性不干胶，回收过程更环保</li>
+                                <li><strong>纸质包装</strong>：100%可回收FSC认证，支持森林可持续发展</li>
+                                <li><strong>简约设计</strong>：减少过度包装，节约资源，降低碳足迹</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="column">
+                        <div class="info-card">
+                            <h4 class="info-card-title"><i class="fas fa-recycle"></i>配方可持续性</h4>
+                            <ul>
+                                <li><strong>98%生物降解表活剂</strong>，28天内可完全降解，低环境影响</li>
+                                <li><strong>不含磷、硼、光漂白剂</strong>，更加环保，不污染水源</li>
+                                <li><strong>低泡沫设计</strong>，节约冲洗用水，减少水资源消耗</li>
+                                <li><strong>浓缩配方</strong>，减少包装材料和物流运输碳排放</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 第四部分：差异化竞争策略 -->
+        <div class="section">
+            <h2 class="section-title">差异化竞争策略</h2>
+            
+            <div class="chapter">
+                <h3 class="chapter-title">技术创新优势</h3>
+                <div class="sub-chapter">
+                    <h4 class="sub-chapter-title">高表活度原料对比</h4>
+                    <div class="chart-container">
+                        <h4 class="highlight-title">表面活性剂浓度对比</h4>
+                        <div class="chart" style="height: 300px;">
+                            <div class="bar">
+                                <div class="bar-fill" style="height: 150px;"></div>
+                                <div class="bar-label">市面普通产品<br>18-22%</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill" style="height: 250px;"></div>
+                                <div class="bar-label">嘉沐馨产品<br>28-32%</div>
+                            </div>
+                        </div>
+                        <p style="text-align: center; margin-top: 1.5rem; font-weight: 500;">预期效果：相同用量下清洁力提升40%，节约用量，提高经济性</p>
+                    </div>
+                    
+                    <div class="info-card" style="margin-top: 2rem;">
+                        <h4 class="info-card-title"><i class="fas fa-microscope"></i>技术优势详解</h4>
+                        <p>嘉沐馨洗护产品采用了先进的表面活性剂技术，主要体现在以下几个方面：</p>
+                        <ul>
+                            <li><strong>高浓度配方</strong>：表面活性剂浓度28-32%，远高于市场平均水平</li>
+                            <li><strong>复合表活体系</strong>：非离子、阴离子、两性表活剂科学配比，提高去污效率</li>
+                            <li><strong>生物基表活剂</strong>：添加植物来源表活剂，温和且高效</li>
+                            <li><strong>低残留设计</strong>：特殊分子结构，易冲洗，不在衣物上残留</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="sub-chapter">
+                    <h4 class="sub-chapter-title">专利申请计划</h4>
+                    <div class="two-column">
+                        <div class="column">
+                            <div class="info-card">
+                                <h4 class="info-card-title"><i class="fas fa-certificate"></i>核心专利布局</h4>
+                                <ul>
+                                    <li><strong>纤维修复复合物</strong>：女娲补天系列核心技术，能有效修复受损织物，延长衣物使用寿命</li>
+                                    <li><strong>速洁低泡技术</strong>：疏影横斜系列特色工艺，快速释放活性成分，5分钟完成深度清洁</li>
+                                    <li><strong>智能用量指示技术</strong>：根据水质硬度和衣物量自动推荐用量的专利设计</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="column">
+                            <div class="progress-bar"><div class="progress-fill" style="width: 75%;"></div></div>
+                            <p style="text-align: center; font-size: var(--small-size); color: var(--light-text);">纤维修复复合物专利进度：75%</p>
+                            
+                            <div class="progress-bar"><div class="progress-fill" style="width: 60%;"></div></div>
+                            <p style="text-align: center; font-size: var(--small-size); color: var(--light-text);">速洁低泡技术专利进度：60%</p>
+                            
+                            <div class="progress-bar"><div class="progress-fill" style="width: 40%;"></div></div>
+                            <p style="text-align: center; font-size: var(--small-size); color: var(--light-text);">智能用量指示技术专利进度：40%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chapter">
+                <h3 class="chapter-title">文化IP价值构建</h3>
+                <div class="two-column">
+                    <div class="column">
+                        <div class="info-card">
+                            <h4 class="info-card-title"><i class="fas fa-handshake"></i>文化灵感策略</h4>
+                            <ul>
+                                <li><strong>文化元素创意应用</strong>：研究传统文化元素并创造性转化为产品设计灵感</li>
+                                <li><strong>地方文化合作</strong>：与当地文化团体、传统工艺人合作，获取设计灵感与文化背景</li>
+                                <li><strong>文化爱好者社群</strong>：建立文化爱好者社群，共同探讨文化元素的现代应用</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="column">
+                        <div class="info-card">
+                            <h4 class="info-card-title"><i class="fas fa-book-open"></i>文化内容生产</h4>
+                            <ul>
+                                <li><strong>小红书文化解读系列</strong>：发布与产品相关的传统文化解读短文，增强品牌文化深度</li>
+                                <li><strong>微信公众号《洗护文化记》</strong>：定期发布与洗护相关的中国传统文化内容</li>
+                                <li><strong>「日常诗意」短视频系列</strong>：将日常洗护场景与古典诗词意境结合，制作短视频</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="info-card" style="margin-top: 2rem;">
+                    <h4 class="info-card-title"><i class="fas fa-cubes"></i>文创延展计划</h4>
+                    <div class="two-column">
+                        <div class="column">
+                            <ul>
+                                <li><strong>简易文创小物</strong>：结合产品推出香囊、书签等小型文创产品</li>
+                                <li><strong>节日限定包装</strong>：重要传统节日推出特别版包装，增加收藏价值</li>
+                                <li><strong>线上互动小游戏</strong>：开发与产品文化主题相关的H5小游戏，增强用户参与感</li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <ul>
+                                <li><strong>原创文化插画</strong>：邀请新锐插画师创作品牌专属文化插画，用于产品包装与宣传</li>
+                                <li><strong>消费者共创活动</strong>：举办"我心中的国风美学"用户投稿活动，增强品牌互动</li>
+                                <li><strong>文化礼盒</strong>：重要节日推出礼盒装，满足送礼需求</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chapter">
+                <h3 class="chapter-title">体验式差异化</h3>
+                <div class="sub-chapter">
+                    <h4 class="sub-chapter-title">多感官体验创新</h4>
+                    <div class="highlight-box">
+                        <div class="two-column">
+                            <div class="column">
+                                <div style="text-align: center; margin-bottom: 1.5rem;">
+                                    <div class="icon" style="background: var(--primary-color);">
+                                        <i class="fas fa-eye"></i>
+                                    </div>
+                                    <h5 style="font-family: var(--title-font); color: var(--primary-color); margin-bottom: 0.5rem; font-size: var(--h5-size);">视觉</h5>
+                                    <p>明月松间照系列包装采用温感变色技术，随水温变化呈现不同画面，寓意月光照耀下的变幻景象。朝代系列产品外观融入各朝代标志性视觉元素，触发文化共鸣。</p>
+                                </div>
+                            </div>
+                            
+                            <div class="column">
+                                <div style="text-align: center; margin-bottom: 1.5rem;">
+                                    <div class="icon" style="background: var(--secondary-color);">
+                                        <i class="fas fa-spa"></i>
+                                    </div>
+                                    <h5 style="font-family: var(--title-font); color: var(--secondary-color); margin-bottom: 0.5rem; font-size: var(--h5-size);">嗅觉</h5>
+                                    <p>唐韵系列采用中国传统香料调配，参考唐代贵族使用的熏香配方，香气层次丰富且持久。诗词系列香型与诗意相符，如"春水碧于天"系列融入清新花草香，唤起春日气息。</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div style="text-align: center; margin-top: 1rem;">
+                            <div class="icon" style="background: var(--accent-color);">
+                                <i class="fas fa-hand-paper"></i>
+                            </div>
+                            <h5 style="font-family: var(--title-font); color: var(--accent-color); margin-bottom: 0.5rem; font-size: var(--h5-size);">触觉</h5>
+                            <p>产品瓶身采用特殊纹理设计，对应不同文化元素。如宋雅系列瓶身融入宋代瓷器纹路，既美观又增强防滑功能。神话系列包装局部采用3D浮雕工艺，增强触感体验，提升产品品质感。</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sub-chapter">
+                    <h4 class="sub-chapter-title">使用体验提升</h4>
+                    <div class="two-column">
+                        <div class="column">
+                            <div class="info-card">
+                                <h4 class="info-card-title"><i class="fas fa-hand-holding-water"></i>精准控量设计</h4>
+                                <p>一按即停精准控量系统，根据衣物量轻松控制用量，避免浪费。内置智能流量控制阀，确保每次使用的量都恰到好处。</p>
+                            </div>
+                        </div>
+                        
+                        <div class="column">
+                            <div class="info-card">
+                                <h4 class="info-card-title"><i class="fas fa-tint-slash"></i>快溶不残留配方</h4>
+                                <p>特殊快溶配方，接触水后迅速溶解，不留白色残渍。优化分子结构，确保冲洗彻底，不在衣物上留下任何残留物。</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card" style="margin-top: 2rem;">
+                        <h4 class="info-card-title"><i class="fas fa-clock"></i>香气持久技术</h4>
+                        <p>采用微胶囊香气缓释技术，使香气能在衣物上持续72小时。不同系列产品香型各异，均采用天然香料，安全无刺激。相比传统洗护产品，香气更加自然、层次丰富，与产品文化主题高度契合。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 第五部分：整合营销传播方案 -->
+        <div class="section">
+            <h2 class="section-title">整合营销传播方案</h2>
+            
+            <div class="chapter">
+                <h3 class="chapter-title">品牌传播核心策略</h3>
+                <div class="highlight-box">
+                    <h4 class="highlight-title">故事营销 + 体验营销 + 数字化传播</h4>
+                    <div class="two-column">
+                        <div class="column">
+                            <div style="text-align: center; padding: 1.5rem; background: rgba(255,255,255,0.5); border-radius: 8px; height: 100%;">
+                                <h5 style="color: var(--primary-color); margin-bottom: 1rem; font-family: var(--title-font);">文化价值</h5>
+                                <p>传承千年洁净智慧，连接传统与现代生活。每款产品背后都有一个源自中国传统文化的故事，赋予日常洗护以文化意义。</p>
+                            </div>
+                        </div>
+                        
+                        <div class="column">
+                            <div style="text-align: center; padding: 1.5rem; background: rgba(255,255,255,0.5); border-radius: 8px; height: 100%;">
+                                <h5 style="color: var(--secondary-color); margin-bottom: 1rem; font-family: var(--title-font);">功能价值</h5>
+                                <p>高表活度原料，提供卓越清洁效果。针对不同场景和面料的专业解决方案，满足消费者多元化的洗护需求。</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="text-align: center; padding: 1.5rem; background: rgba(255,255,255,0.5); border-radius: 8px; margin-top: 1.5rem;">
+                        <h5 style="color: var(--accent-color); margin-bottom: 1rem; font-family: var(--title-font);">情感价值</h5>
+                        <p>仪式感、美学享受与社交价值。产品不仅是洗护工具，更是生活方式的表达和精神文化的延伸，成为消费者情感价值的载体。</p>
+                    </div>
+                    
+                    <p style="text-align: center; margin-top: 2rem; font-weight: 500;">传播主线：穿越千年的洁净智慧 - 将古老智慧与现代科技完美融合</p>
+                </div>
+                
+                <div class="sub-chapter">
+                    <h4 class="sub-chapter-title">沟通目标与关键指标</h4>
+                    <div class="two-column">
+                        <div class="column">
+                            <div class="info-card">
+                                <h4 class="info-card-title"><i class="fas fa-bullseye"></i>品牌沟通三大目标</h4>
+                                <ul>
+                                    <li><strong>提升品牌认知</strong>：首年目标覆盖率15%，目标人群中有效触达</li>
+                                    <li><strong>建立差异化形象</strong>：成为消费者心目中"有文化的洗护品牌"</li>
+                                    <li><strong>培养品牌忠诚</strong>：核心用户复购率50%，形成品牌拥趸群体</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="column">
+                            <div class="info-card">
+                                <h4 class="info-card-title"><i class="fas fa-chart-pie"></i>核心KPI设定</h4>
+                                <ul>
+                                    <li><strong>品牌声量</strong>：社交媒体月均提及量10万次</li>
+                                    <li><strong>内容互动</strong>：平均互动率达行业标准2倍以上</li>
+                                    <li><strong>用户留存</strong>：首购用户3个月内重复购买率35%</ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 页脚 -->
+        <div class="footer">
+            <h3 class="footer-title">嘉沐馨</h3>
+            <p class="footer-text">传承千年洁净智慧，创造当代生活美学</p>
+        
